@@ -13,10 +13,7 @@ body {
   --bg-blue: rgba(11, 11, 11, 1);
   --text-white: rgba(255, 255, 255, 1);
 }
-/* body.dark {
-  --bg-dark: rgba(87, 184, 255, 1);
-  --bg-blue: rgba(0, 0, 0, 0.9);
-} */
+
 .container {
   /* 1501 - 2 * 60 + 2 * 20 = 1381*/
   max-width: 1381px;
@@ -54,13 +51,13 @@ ul {
 }
 /* nav-brend */
 .nav-brend {
-  margin-right: 100px;
+  margin-right: 280px;
   display: flex;
   align-items: center;
   gap: 2px;
 }
 nav {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
 }
 .nav-menu {
@@ -98,6 +95,7 @@ nav {
 }
 
 .word-img {
+  width: 100%;
   padding-bottom: 132px;
   align-items: center;
   padding-top: 114px;
@@ -145,6 +143,17 @@ input {
 .is {
   color: rgba(139, 142, 153, 1);
   padding-top: 9px;
+}
+.watch-card img {
+  padding-top: 40px;
+}
+.watch-card {
+  overflow: hidden;
+  transform: scale(0.9);
+  background-size: cover;
+}
+.watch-card:hover div {
+  transform: scale(1.2);
 }
 .our p {
   padding-top: 135px;
@@ -285,6 +294,11 @@ h4 {
   text-align: center;
   color: rgba(56, 88, 214, 1);
 }
+#hamburger {
+  color: #fff;
+  padding-left: 20px;
+  font-size: 25px;
+}
 .say {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -294,6 +308,7 @@ h4 {
   text-align: center;
   color: rgba(30, 29, 29, 1);
 }
+
 .btn {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -316,4 +331,158 @@ h4 {
 }
 a:hover {
   color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 1233px) {
+  .nav-brend {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .nav-btn {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+@media (max-width: 497px) {
+  .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Tablet: 1024px dan kichik */
+@media (max-width: 1024px) {
+  .word-img {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .cards,
+  .watches,
+  .watches2,
+  .cads,
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .nav-btn {
+    padding-left: 0;
+  }
+
+  .nav-brend {
+    margin-right: 0;
+  }
+
+  .card,
+  .cad,
+  .w {
+    width: 90%;
+  }
+}
+
+/* Mobil: 768px dan kichik */
+@media (max-width: 768px) {
+  .word {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .wordp {
+    font-size: 14px;
+  }
+
+  input,
+  .email,
+  .btn,
+  .emai {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .btn,
+  .emai {
+    font-size: 16px;
+    height: 42px;
+  }
+
+  .watch-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .word-img {
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .subribe,
+  .say {
+    font-size: 28px;
+  }
+}
+
+/* Kichik mobil: 480px dan kichik */
+@media (max-width: 480px) {
+  header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .word {
+    font-size: 28px;
+    line-height: 110%;
+  }
+
+  .wordp {
+    font-size: 13px;
+  }
+
+  .word-img {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .subribe,
+  .say {
+    font-size: 22px;
+  }
+
+  .btn,
+  .emai {
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .card,
+  .cad,
+  .w {
+    width: 95%;
+  }
 }

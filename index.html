@@ -15,6 +15,16 @@
     />
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- aos link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- awersome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <link
@@ -40,6 +50,7 @@
             <div class="nav-brend">
               <img src="./images/smart watch.svg" alt="no img?" />
               <p class="Mohid">Mohid</p>
+              <i id="hamburger" class="fa-solid fa-bars"></i>
             </div>
             <div class="nav-menu">
               <ul>
@@ -84,7 +95,7 @@
             Just order now!
           </p>
           <input type="email" placeholder=" Find the best brands" />
-          <input class="t" type="submit" />
+          <input class="t" type="submit" value="Search" />
         </div>
         <img src="./images/smart.svg" alt="no img" />
       </div>
@@ -92,7 +103,8 @@
     <!--Recent Products -->
     <main id="recent products">
       <div class="cards">
-        <div class="card">
+        <div class="card" data-aos="fade-down-right">
+          <div data-aos="flip-left"></div>
           <img src="./images/aple.svg" alt="no img" />
           <div class="h2-p">
             <h2 class="Apple">Apple</h2>
@@ -104,7 +116,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-up">
           <img src="./images/redmi.svg" alt="no img" />
           <div class="h2-p">
             <h2 class="Apple">Xiaomi</h2>
@@ -115,7 +127,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-down-left">
           <img src="./images/fipbit.svg" alt="no img" />
           <div class="h2-p">
             <h2 class="Apple">FitBit</h2>
@@ -128,54 +140,16 @@
           </div>
         </div>
       </div>
-      <div class="wtch">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <h4><img src="./images/mk.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/MK4.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mku.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mku3.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mku4.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/smart.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/MK4.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mku.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mk.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mku3.svg" alt="no img" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mku4.svg" alt="no img?" /></h4>
-          </div>
-          <div class="item">
-            <h4><img src="./images/mk.svg" alt="no img" /></h4>
-          </div>
-        </div>
-      </div>
     </main>
     <!-- contact -->
     <main id="contact">
       <div class="our">
-        <p class="our p">Find your favourite smart watch.</p>
-        <h2 class="our h2">Our Latest Products</h2>
+        <p class="our p" data-aos="zoom-out-down">
+          Find your favourite smart watch.
+        </p>
+        <h2 class="our h2" data-aos="zoom-out-down">Our Latest Products</h2>
         <div class="watches">
-          <div class="watch-card">
+          <div class="watch-card" data-aos="zoom-in-right">
             <div class="w">
               <img src="./images/mk.svg" alt="no img" />
             </div>
@@ -186,7 +160,7 @@
               <h3 class="watch">$255.00</h3>
             </div>
           </div>
-          <div class="watch-card">
+          <div class="watch-card" data-aos="zoom-out-up">
             <div class="w">
               <img src="./images/mku.svg" alt="no img" />
             </div>
@@ -197,7 +171,7 @@
               <h3 class="watch">$255.00</h3>
             </div>
           </div>
-          <div class="watch-card">
+          <div class="watch-card" data-aos="zoom-in-left">
             <div class="w">
               <img src="./images/mku3.svg" alt="no img" />
             </div>
@@ -210,7 +184,7 @@
           </div>
         </div>
         <div class="watches2">
-          <div class="watch-card">
+          <div class="watch-card" data-aos="zoom-in-right">
             <div class="w">
               <img src="./images/MK4.svg" alt="no img" />
             </div>
@@ -221,7 +195,7 @@
               <h3 class="watch">$399.00</h3>
             </div>
           </div>
-          <div class="watch-card">
+          <div class="watch-card" data-aos="zoom-out">
             <div class="w">
               <img src="./images/mku.svg" alt="no img" />
             </div>
@@ -232,7 +206,7 @@
               <h3 class="watch">$255.00</h3>
             </div>
           </div>
-          <div class="watch-card">
+          <div class="watch-card" data-aos="zoom-in-left">
             <div class="w">
               <img src="./images/fit.svg" alt="no img" />
             </div>
@@ -244,17 +218,27 @@
           </div>
         </div>
         <div class="btns">
-          <button class="btn">View More</button>
+          <button
+            class="btn"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            View More
+          </button>
         </div>
       </div>
     </main>
     <!-- about -->
     <main id="about">
       <div class="About-word">
-        <p class="About">Here are our some of the best clients.</p>
-        <h2 class="say">What People Say About Us</h2>
+        <p class="About" data-aos="zoom-out-down">
+          Here are our some of the best clients.
+        </p>
+        <h2 class="say" data-aos="zoom-out-down">What People Say About Us</h2>
+
         <div class="cads">
-          <div class="cad">
+          <div class="cad" data-aos="flip-left">
             <img src="./images/child.svg" alt="no img" />
             <div class="h2-p">
               <h2 class="child">Hamza Faizi</h2>
@@ -265,7 +249,7 @@
               </p>
             </div>
           </div>
-          <div class="cad">
+          <div class="cad" data-aos="flip-right">
             <img src="./images/men.svg" alt="no img" />
             <div class="h2-p">
               <h2 class="child">Hafiz Huzaifa</h2>
@@ -279,16 +263,15 @@
         </div>
       </div>
       <div class="footer">
-        <div class="wd">
+        <div class="wd" data-aos="flip-up">
           <h2 class="subribe">Subscribe To Newsletter</h2>
           <p class="Get">Get free guide about smart watches daily.</p>
           <input class="email" type="email" placeholder="Enter Email Address" />
-          <input class="emai" type="submit" placeholder="Subscribe" />
+          <input class="t" type="submit" value="Subscribe" />
         </div>
-        <img src="./images/aqli soat.svg" alt="no img?" />
+        <img src="./images/aqli soat.svg" data-aos="flip-down" alt="no img?" />
       </div>
     </main>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -301,7 +284,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
