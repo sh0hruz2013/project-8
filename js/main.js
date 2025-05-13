@@ -27,7 +27,6 @@ AOS.init();
 // Hamburger
 let btn = document.querySelector("#hamburger");
 let navMenu = document.querySelector(".nav-menu");
-let dark_btn = document.querySelector(".dark--btn");
 btn.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
