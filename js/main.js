@@ -30,3 +30,7 @@ let navMenu = document.querySelector(".nav-menu");
 btn.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+document.getElementById("hamburger").addEventListener("click", function () {
+  const navMenu = document.querySelector(".nav-menu");
+  navMenu.classList.toggle("show");
+});

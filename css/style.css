@@ -33,6 +33,7 @@ body {
 header {
   background-image: linear-gradient(to right, var(--bg-dark), var(--bg-blue));
   position: fixed;
+  top: 0;
   width: 100%;
   height: 10%;
   padding-top: 20px;
@@ -332,157 +333,182 @@ h4 {
 a:hover {
   color: rgba(255, 255, 255, 1);
 }
-@media (max-width: 1233px) {
-  .nav-brend {
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .nav-btn {
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-  }
+@media (max-width: 1264px) {
   nav {
     flex-direction: column;
-    align-items: center;
+  }
+  .nav-brend {
     justify-content: center;
-    text-align: center;
+    margin: 0 auto;
   }
   .nav-menu {
-    flex-direction: column;
-  }
-}
-@media (max-width: 497px) {
-  .nav-menu {
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
+@media (max-width: 512px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-/* Tablet: 1024px dan kichik */
-@media (max-width: 1024px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu.active ul {
+    display: flex;
+  }
+
   .word-img {
     flex-direction: column;
-    gap: 40px;
-    padding: 60px 20px;
+    align-items: center;
     text-align: center;
+  }
+
+  .word-img img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .h1-p h1 {
+    font-size: 28px;
   }
 
   .cards,
   .watches,
   .watches2,
-  .cads,
-  .footer {
+  .cads {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 0 20px;
-  }
-
-  .nav-btn {
-    padding-left: 0;
-  }
-
-  .nav-brend {
-    margin-right: 0;
   }
 
   .card,
-  .cad,
-  .w {
+  .watch-card,
+  .cad {
     width: 90%;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer img {
+    width: 70%;
+    max-width: 250px;
+    margin-top: 20px;
   }
 }
+@media (max-width: 806px) {
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    display: block;
+  }
 
-/* Mobil: 768px dan kichik */
-@media (max-width: 768px) {
+  .nav-brend {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .word-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .h1-p {
+    padding: 20px;
+  }
+
   .word {
-    font-size: 36px;
-    line-height: 110%;
+    font-size: 24px;
   }
 
   .wordp {
     font-size: 14px;
   }
 
-  input,
-  .email,
-  .btn,
-  .emai {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .btn,
-  .emai {
-    font-size: 16px;
-    height: 42px;
-  }
-
-  .watch-card img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .word-img {
-    padding: 40px 15px;
-    gap: 30px;
-  }
-
-  .subribe,
-  .say {
-    font-size: 28px;
-  }
-}
-
-/* Kichik mobil: 480px dan kichik */
-@media (max-width: 480px) {
-  header {
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .word {
-    font-size: 28px;
-    line-height: 110%;
-  }
-
-  .wordp {
-    font-size: 13px;
-  }
-
-  .word-img {
-    padding: 30px 10px;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
   }
 
-  .subribe,
-  .say {
-    font-size: 22px;
+  .card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .btn,
-  .emai {
-    font-size: 15px;
-    height: 40px;
+  .watches,
+  .watches2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .watch-card {
     width: 100%;
-    max-width: 300px;
+    text-align: center;
   }
 
   .footer {
-    padding: 0 10px;
-    gap: 15px;
+    padding: 20px;
   }
 
-  .card,
-  .cad,
-  .w {
-    width: 95%;
+  .wd {
+    text-align: center;
+  }
+
+  .subribe {
+    font-size: 18px;
+  }
+
+  .nav-btn img {
+    display: none;
   }
 }
