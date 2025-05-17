@@ -1,0 +1,179 @@
+@media (max-width: 1264px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-brend {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .nav-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 512px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu.active ul {
+    display: flex;
+  }
+
+  .word-img {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .word-img img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .h1-p h1 {
+    font-size: 28px;
+  }
+
+  .cards,
+  .watches,
+  .watches2,
+  .cads {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .watch-card,
+  .cad {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer img {
+    width: 70%;
+    max-width: 250px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 806px) {
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    display: block;
+  }
+
+  .nav-brend {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .word-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .h1-p {
+    padding: 20px;
+  }
+
+  .word {
+    font-size: 24px;
+  }
+
+  .wordp {
+    font-size: 14px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .watches,
+  .watches2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .watch-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .wd {
+    text-align: center;
+  }
+
+  .subribe {
+    font-size: 18px;
+  }
+
+  .nav-btn img {
+    display: none;
+  }
+}
